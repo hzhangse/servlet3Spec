@@ -12,9 +12,9 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.http.HttpServletResponse;
 
-@WebFilter(urlPatterns = { "/*" }, initParams = {
-		@WebInitParam(name = "oldword", value = "%") ,
-		@WebInitParam(name = "newword", value = "百分号") })
+//@WebFilter(urlPatterns = { "/*" }, initParams = {
+//		@WebInitParam(name = "oldword", value = "%") ,
+//		@WebInitParam(name = "newword", value = "百分号") })
 public class GavinFilter implements Filter {
 	private String oldword = "%", newword = "百分号";
 

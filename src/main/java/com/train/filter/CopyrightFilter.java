@@ -12,8 +12,8 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;
 
-@WebFilter(urlPatterns = { "/*" }, initParams = {
-		@WebInitParam(name = "date", value = "20XX-XX-XX") })
+//@WebFilter(urlPatterns = { "/*" }, initParams = {
+//		@WebInitParam(name = "date", value = "20XX-XX-XX") })
 public class CopyrightFilter implements Filter{
     private String date;
     public FilterConfig config;

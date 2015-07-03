@@ -14,11 +14,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
 
-@WebFilter(urlPatterns = { "/*" }, initParams = {
-		@WebInitParam(name = "logonStrings", value = "login.jsp"),
-		@WebInitParam(name = "includeStrings", value = ".jsp;.html;.htm"),
-		@WebInitParam(name = "redirectPath", value = "./login.jsp"),
-		@WebInitParam(name = "disabletestfilter", value = "n") })
+//@WebFilter(urlPatterns = { "/*" }, initParams = {
+//		@WebInitParam(name = "logonStrings", value = "login.jsp"),
+//		@WebInitParam(name = "includeStrings", value = ".jsp;.html;.htm"),
+//		@WebInitParam(name = "redirectPath", value = "./login.jsp"),
+//		@WebInitParam(name = "disabletestfilter", value = "n") })
 public class SessionFilter implements Filter {
 	String logonStrings, includeStrings, redirectPath, disabletestfilter;
 	String[] logonList, includeList;
