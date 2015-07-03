@@ -1,0 +1,1 @@
+<%@ page contentType="text/html;charset=UTF-8" %> 退出会话<% session.invalidate(); %> 
